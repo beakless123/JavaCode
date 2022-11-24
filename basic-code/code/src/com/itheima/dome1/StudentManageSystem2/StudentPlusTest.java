@@ -1,5 +1,7 @@
 package com.itheima.dome1.StudentManageSystem2;
 
+import com.itheima.dome1.StudentManageSystem.StudentTest;
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -18,6 +20,7 @@ public class StudentPlusTest {
                 case "1"-> {
                     System.out.println("登录");
                     singIn(userList);
+
                 }
                 case "2"-> {
                     System.out.println("注册");
@@ -52,6 +55,8 @@ public class StudentPlusTest {
                     for (int i = 0; i < 3; i++) {
                         if(list.get(index).getPassword().equals(pass)){
                             System.out.println("登录成功");
+                            StudentTest st = new StudentTest();
+                            st.startStudentTest();
                             return;
                         }else {
                             if (i==2){

@@ -2,7 +2,7 @@ package com.itheima.dome1.StudentManageSystem;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class StudentTest {
-    public static void main(String[] args) {
+    public static void startStudentTest() {
         ArrayList<Student> studentList = new ArrayList<>();
         Student s1 = new Student( "001","张三", 18, "布吉岛");
         studentList.add(s1);

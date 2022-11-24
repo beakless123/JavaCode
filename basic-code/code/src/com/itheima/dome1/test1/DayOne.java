@@ -1,7 +1,9 @@
 package com.itheima.dome1.test1;
 
+import java.util.ArrayList;
+
 public class DayOne {
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        System.out.println("~~~java\n" +
 //                "java是一门跨平台的计算机语言\n" +
 //                "被称为一次编写，处处运行\n" +
@@ -37,10 +39,34 @@ public class DayOne {
 //        System.out.println(c);
 //        System.out.println(bl);
 
-        int a=10;
-        int b=20;
-        System.out.println("10+20="+(a+b));
-
+//        int a=10;
+//        int b=20;
+//        System.out.println("10+20="+(a+b));
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("123");
+        list.add("456");
+        list.add("1");
+        for(int i = 0;i<list.size();i++) {
+            if(list.get(i).length()>1) {
+                list.remove(i);
+            }
+        }
+        System.out.println(list);
+//        ArrayList<String> list = new ArrayList<>();
+//        list.add("a");
+//        list.add("b");
+//        list.add("c");
+//        list.add("b");
+//        list.add("b");
+////        for (int i = 0; i < list.size(); i++) {
+////            if (list.get(i).equals("b")) {
+////                list.remove(i);
+////            }
+////        }
+//        list.remove ("b");
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println(list.get(i));
+//        }
     }
-
 }
